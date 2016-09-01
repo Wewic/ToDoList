@@ -1,0 +1,33 @@
+.title {
+	font-size: 3em;
+	text-align: center;
+}
+
+.todos {
+	text-align: left;
+}
+
+ul{
+	list-style-position: inside;
+}
+
+.button {
+	text-align: center;
+}
+
+.root-title {
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 200px;	
+}
+.root-box {
+	font-size: 2em;
+	text-align: center;
+	margin-top: 10px;	
+}
+
+.root-button {
+	text-align: center;
+	margin-top: 25px;
+}

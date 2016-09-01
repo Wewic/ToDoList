@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<div class = "row">
+        <div class = "col-md-12 root-title">
+        Add something to do
+        </div>
+        </div>
+<%= form_for(@todo) do |f| %>
+    <div class = "row">
+        <div class = "col-md-12 root-box">
+            <%= f.label :item, "Todo Item:" %>
+            <%= f.text_field :item, autofocus: true%>
+
+        <%= f.hidden_field :finished, :value => false %>
+        </div>
+    </div>
+
+    <div class = "row">
+        <div class = "col-md-12 root-button">
+            <%= f.submit "Add", class: "btn btn-primary btn-lg" %> 
+        </div>
+    </div>
+
+
+    <%end %>
+</body>
+</html>
